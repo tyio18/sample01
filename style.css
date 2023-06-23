@@ -1,0 +1,40 @@
+body {
+    width: 100%;
+    background-color: #fff;
+}
+
+.wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.cva {
+    position: relative;
+    & .button {
+        position: absolute;
+        bottom: 8%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        animation: anime1 1s ease 0s infinite alternate;
+        transform-origin: center;
+        & img {
+            max-width: 90%;
+        }
+    }
+}
+
+@keyframes anime1 {
+    from {
+        transform: scale(0.95,0.95);
+    }
+    to {
+        transform: scale(1,1);
+    }
+}
